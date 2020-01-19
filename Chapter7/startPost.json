@@ -1,0 +1,25 @@
+[
+  {
+    "description":"这是一个无参的pos请求mock",
+    "request":{
+      "method":"Post",
+      "uri":"/post1"
+    },
+    "response":{
+      "text":"这是一个无参的mock请求结果"
+    }
+  },
+  {
+    "description":"这是一个无参的pos请求mock",
+    "request":{
+      "method":"Post",
+      "uri":"/postwithparam",
+      "forms":{
+        "name":"吴彦祖"
+      }
+    },
+    "response":{
+      "text":"这是我的男神！！！@@@@@"
+    }
+  }
+]

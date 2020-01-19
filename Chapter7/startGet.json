@@ -1,0 +1,26 @@
+[
+  {
+    "description":"这是一个get无参mock",
+    "request":{
+      "method":"get",
+      "uri":"/get1"
+    },
+    "response":{
+      "text":"这是一个无参的mock返回结果"
+    }
+  },
+  {
+    "description":"这是一共有参的mock",
+    "request":{
+      "method":"get",
+      "uri":"/getwithparam",
+      "queries":{
+        "name":"张曼玉",
+        "age":"20"
+      }
+    },
+    "response":{
+      "text":"啊啊啊啊啊啊女神啊啊啊啊啊啊"
+    }
+  }
+]

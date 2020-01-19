@@ -1,0 +1,27 @@
+[
+  {
+
+    "description":"这是一个重定向到百度",
+    "request":{
+      "uri":"/redirect"
+
+    },
+    "redirectTo":"http://www.baidu.com"
+  },
+  {
+    "description":"这是从a地址重定向到b地址",
+    "request":{
+      "uri":"/redirectA"
+    },
+    "redirectTo":"redirectB"
+  },
+  {
+    "description":"这是b地址",
+    "request":{
+      "uri":"/redirectB"
+    },
+    "response":{
+      "text":"a地址重定向到b成功啦！！！！"
+    }
+  }
+]

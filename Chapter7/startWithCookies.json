@@ -1,0 +1,35 @@
+[
+  {
+    "description":"这是一个需要cookies的get请求mock",
+    "request":{
+      "method":"Get",
+      "uri":"/get/with/cookies",
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response":{
+      "text":"这是一个需要cookies的get请求mock6666"
+    }
+  },
+  {
+    "description":"这是一共需要cookies的post请求mock",
+    "request":{
+      "method":"Post",
+      "uri":"/post/with/cookies",
+      "cookies":{
+        "login":"true"
+      },
+      "json":{
+        "name":"xiaoming",
+        "sex":"woman"
+      }
+    },
+    "response":{
+      "json":{
+        "status":200,
+        "xiaoming":"success"
+      }
+    }
+  }
+]
