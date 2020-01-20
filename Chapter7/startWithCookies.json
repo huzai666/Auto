@@ -1,8 +1,39 @@
 [
   {
+    "description":"这是一个可以返回cookies的get请求",
+    "request":{
+      "method":"get",
+      "uri":"/get/response/cookies"
+    },
+    "response":{
+      "text":"恭喜你获得了返回的cookies",
+      "cookies":{
+        "login":"true"
+      }
+    }
+  },
+
+  {
+    "description":"这是一个可以返回cookies的post请求",
+    "request":{
+      "method":"post",
+      "uri":"/post/response/cookies",
+      "json":{
+        "userName":"wanglu",
+        "pwd":"123"
+      }
+    },
+    "response":{
+      "text":"拿到返回的cookies啦！！！！",
+      "cookies":{
+        "login":"true"
+      }
+    }
+  },
+  {
     "description":"这是一个需要cookies的get请求mock",
     "request":{
-      "method":"Get",
+      "method":"get",
       "uri":"/get/with/cookies",
       "cookies":{
         "login":"true"
