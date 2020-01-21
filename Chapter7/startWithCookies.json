@@ -37,6 +37,10 @@
       "uri":"/get/with/cookies",
       "cookies":{
         "login":"true"
+      },
+      "queries":{
+        "name":"张曼玉",
+        "age":"20"
       }
     },
     "response":{
