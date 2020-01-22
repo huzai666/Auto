@@ -1,6 +1,5 @@
 package com.httpclient.cookies;
 
-import org.apache.http.HttpEntity;
 import org.apache.http.client.CookieStore;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -53,18 +52,19 @@ public class cookiesForGet {
         String result =  EntityUtils.toString(response.getEntity(),"utf-8");
         System.out.println(result);
 
-        // 获取cookie
+        // 获取cookies
         List<Cookie> cookies = store.getCookies();
         for ( Cookie myCookie : cookies){
             String key = myCookie.getName();
             String value = myCookie.getValue();
             System.out.println("恭喜你成功获取cookies：" + key + "=" + value);
-            System.out.println("------------------------------");
         }
+
+        System.out.println("------------------------------");
 
     }
 
-    // 写一个有参的get请求吧(参数直接拼在url后面了)，并且需要携带参数才能请求
+    // 写一个有参的get请求吧，并且需要携带参数才能请求
     @Test(dependsOnMethods = "testGetCookies")
     public void testSendCookies() throws IOException, URISyntaxException {
 

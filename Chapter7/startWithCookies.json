@@ -48,7 +48,7 @@
     }
   },
   {
-    "description":"这是一共需要cookies的post请求mock",
+    "description":"这是一个需要cookies的post请求mock",
     "request":{
       "method":"Post",
       "uri":"/post/with/cookies",
